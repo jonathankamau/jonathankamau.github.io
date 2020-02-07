@@ -2599,11 +2599,11 @@ textarea.form-control:focus, textarea.form-control:active {
 }
 
 .progress-container.progress-primary .progress {
-  background: rgba(0, 0, 139);
+  background: rgba(65, 102, 245);
 }
 
 .progress-container.progress-primary .progress-bar {
-  background: #4166f5;
+  background: #00008b;
 }
 
 .progress-container.progress-primary .progress-value,
