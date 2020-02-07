@@ -1525,7 +1525,7 @@ fieldset[disabled]
 .show > .btn-primary.dropdown-toggle:focus,
 .show > .btn-primary.dropdown-toggle:hover {
   background-color: #f5d041;
-  color: #FFFFFF;
+  color: #000000;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
