@@ -1515,7 +1515,7 @@ fieldset[disabled]
 }
 
 .btn-primary {
-  background-color: #378C3F;
+  background-color: #0000cd;
   color: #FFFFFF;
   padding: 11px 2px;
 }
@@ -3403,7 +3403,7 @@ body {
 }
 
 .bg-primary {
-  background-color: #378C3F !important;
+  background-color: #0000cd !important;
 }
 
 .bg-info {
