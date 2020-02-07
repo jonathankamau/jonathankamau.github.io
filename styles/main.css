@@ -1515,7 +1515,7 @@ fieldset[disabled]
 }
 
 .btn-primary {
-  background-color: #0000cd;
+  background-color: #4166f5;
   color: #FFFFFF;
   padding: 11px 2px;
 }
@@ -2831,11 +2831,11 @@ small {
 }
 
 a {
-  color: #378C3F;
+  color: #4166f5;
 }
 
 a:hover, a:focus {
-  color: #378C3F;
+  color: #4166f5;
 }
 
 h1, .h1 {
@@ -4928,13 +4928,13 @@ Created using IcoMoon - icomoon.io
 }
 
 .section-full-page[filter-color="purple"]:after, .section-full-page[filter-color="primary"]:after {
-  background: rgba(227, 227, 227, 0.26);
+  background: rgba(212, 212, 212);
   /* For browsers that do not support gradients */
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
   /* For Firefox 3.6 to 15 */
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(227, 227, 227, 0.26)), to(rgba(55, 140, 63, 0.95)));
-  background: linear-gradient(0deg, rgba(227, 227, 227, 0.26), rgba(55, 140, 63, 0.95));
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(227, 227, 227, 0.26)), to(rgba(65, 102, 245)));
+  background: linear-gradient(0deg, rgba(227, 227, 227, 0.26), rgba(65, 102, 245));
   /* Standard syntax */
 }
 
@@ -7097,7 +7097,7 @@ Created using IcoMoon - icomoon.io
 
 .cc-profile-image a:before {
   content: "";
-  border: 15px solid rgba(55, 140, 63, 0.6);
+  border: 15px solid rgba(65, 102, 245);
   border-radius: 50%;
   height: 180px;
   width: 180px;
