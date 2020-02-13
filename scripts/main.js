@@ -6,6 +6,21 @@ $(document).ready(function() {
     // uncomment below for on-scroll animations to played only once
     // once: true  
   }); // initialize animate on scroll library
+
+});
+
+$(document).on('click', '.morelink', function(){
+  if($(this).hasClass("less")) {
+      $(this).removeClass("less");
+      $(this).html("more");
+      } 
+      else {
+      $(this).addClass("less");
+      $(this).html("less");
+      }
+      $(this).prev().toggle();
+      return false;
+  
 });
 
 // Smooth scroll for links with hashes
