@@ -10,13 +10,13 @@ $(document).ready(function() {
 });
 
 $(document).on('click', '.morelink', function(){
-  if($(this).hasClass("less")) {
-      $(this).removeClass("less");
-      $(this).html("more");
+  if($(this).hasClass("Read Less")) {
+      $(this).removeClass("Read Less");
+      $(this).html("Read More");
       } 
       else {
-      $(this).addClass("less");
-      $(this).html("less");
+      $(this).addClass("Read Less");
+      $(this).html("Read Less");
       }
       $(this).prev().toggle();
       return false;

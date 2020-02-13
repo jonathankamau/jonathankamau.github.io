@@ -8,6 +8,7 @@ var jsonContent = new Array();
                 $.getJSON( "data/"+fileName, function( data ) {
                     jsonContent.push(data)
                     $.each(data, function(key, val){
+                        console.log(data)
                         populateData(key, val);
                         
                     })
@@ -32,8 +33,8 @@ function openFile(file) {
 
 function populateData(key, val) {
     if (document.getElementById(key)) {
-        var key = document.getElementById(key)
-        var showChar = 200;
+        var key = document.getElementById(key);
+        var showChar = 400;
         var ellipsestext = "...";
         var moretext = "Read More";
         
@@ -42,13 +43,22 @@ function populateData(key, val) {
             var h = val.substr(showChar, val.length);
     
             var newVal = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
-            key.innerHTML = newVal;
-            
+            key.innerHTML = newVal; 
         }
         else {
             key.innerHTML = val;
         }
     }
+    else {
+        var keys = document.getElementsByName(key)
+        console.log(keys)
+
+        for (var index=0; index<keys.length; index++){
+            keys[index].innerHTML = val;
+        }
+    }
+
+    
     
     
 
