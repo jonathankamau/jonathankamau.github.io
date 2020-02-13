@@ -1,0 +1,12 @@
+{
+    "first-project-title": "<strong>Data Engineering Capstone Project</strong>",
+    "first-project-text": "In this project, I worked on building an ETL pipeline that will be able to provide information to data analysts, immigration and climate researchers e.tc with temperature, population and immigration statistics for different cities. It does this by first extracting temperature, airport, immigration and demographic data from various datasets, perform some transformation on it and convert the data into json files using Apache Spark that can be then uploaded to a Redshift database. Using Apache Airflow, the json files get migrated to s3, then the data gets uploaded to Redshift, undergoes further transformation and gets loaded to normalized fact and dimension tables using a series of reusable tasks that allow for easy backfills. Finally, data checks are run against the data in the fact and dimension tables so as to catch any discrepancies that might be found in the data.",
+    "first-project-tools": "<strong>Language:</strong> Python 2.7<br><strong>Tools:</strong> Apache Spark, Apache Airflow, Amazon Redshift and Amazon S3.",
+    "second-project-title": "<strong>MovieBuff-API</strong>",
+    "second-project-text": "I Developed an API in Python that allows users to create, view and update their list of favorite movies. I created it using Python Flask, integrated it with both MongoDB and Postgres, implemented an ORM framework SQLAlchemy, and set up continuous deployment of the API on Heroku.",
+    "second-project-tools": "<strong>Language:</strong> Python 3.7<br><strong>Tools:</strong> Python Flask, MongoDB, Postgres, SQLAlchemy.",
+    "third-project-title": "<strong>EpisodeTracker-API</strong>",
+    "third-project-text": "Episode Tracker is an API I built that enables the user to be able to keep track of the TV Shows they are watching. They are able to search for TV Shows, view details of the shows and their episodes as well as log the episodes they have watched, They also able to tag their favourite shows and are able to get suggestions of similar shows."
+
+
+}
