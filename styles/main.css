@@ -7167,8 +7167,8 @@ Created using IcoMoon - icomoon.io
           transform: scaleX(1);
 }
 
-/* Experience Style */
-.cc-experience .cc-experience-header {
+/* Portfolio Style */
+.cc-portfolio .cc-portfolio-header {
   padding-top: 60px;
   padding-right: 0;
   text-align: center;
@@ -7176,7 +7176,25 @@ Created using IcoMoon - icomoon.io
   text-transform: uppercase;
 }
 
-.cc-portfolio .cc-portfolio-header {
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+}
+.comment {
+	width: 400px;
+	background-color: #f0f0f0;
+	margin: 10px;
+}
+
+.view-on-github {
+  color: #fff;
+}
+
+/* Experience Style */
+.cc-experience .cc-experience-header {
   padding-top: 60px;
   padding-right: 0;
   text-align: center;
