@@ -7190,7 +7190,10 @@ a.morelink {
 }
 
 .view-on-github {
-  color: #fff;
+  color: #ffff;
+}
+.view-on-github:hover {
+  color: #f5d041;
 }
 
 /* Experience Style */
@@ -7200,6 +7203,13 @@ a.morelink {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
+}
+
+.company {
+  color: #ffff;
+}
+.company:hover  {
+  color: #f5d041;
 }
 
 /* Education Style */
