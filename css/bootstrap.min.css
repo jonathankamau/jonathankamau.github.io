@@ -2135,6 +2135,10 @@ fieldset[disabled] a.btn {
     border-color: #007bff
 }
 
+.submit-btn {
+    width: 90px;
+}
+
 .btn-primary.active,
 .btn-primary:active,
 .show>.btn-primary.dropdown-toggle {
