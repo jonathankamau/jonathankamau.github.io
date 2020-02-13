@@ -1,6 +1,6 @@
 var jsonContent = new Array();
     $.ajax({
-      url: "../data",
+      url: "../data/",
       success: function(data){
          $(data).find("a").each(function(){
             if(openFile($(this).attr("href"))){
