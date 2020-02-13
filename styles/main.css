@@ -7208,6 +7208,9 @@ a.morelink {
 .company {
   color: #ffff;
 }
+.company:visited {
+  color: #ffff;
+}
 .company:hover  {
   color: #f5d041;
 }
@@ -7215,6 +7218,10 @@ a.morelink {
 /* Education Style */
 .cc-education .h5 {
   margin-bottom: 0;
+}
+
+.certificate-text {
+  font-size: 15px;
 }
 
 .cc-education .cc-education-header {
