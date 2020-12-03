@@ -34,7 +34,7 @@ function openFile(file) {
 function populateData(key, val) {
     if (document.getElementById(key)) {
         var key = document.getElementById(key);
-        var showChar = 400;
+        var showChar = 10000;
         var ellipsestext = "...";
         var moretext = "Read More";
         
