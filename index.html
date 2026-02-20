@@ -27,6 +27,7 @@
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
+      <div class="nav-backdrop" id="nav-backdrop"></div>
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -161,9 +162,19 @@
         <div class="skill-category">
           <h3 class="skill-category-title">Cloud &amp; DevOps</h3>
           <div class="skill-tags">
-            <span class="skill-tag">AWS (EC2, S3, RDS, Elastic Beanstalk, Amplify, CloudFront)</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">EC2</span>
+            <span class="skill-tag">S3</span>
+            <span class="skill-tag">RDS</span>
+            <span class="skill-tag">Elastic Beanstalk</span>
+            <span class="skill-tag">Amplify</span>
+            <span class="skill-tag">CloudFront</span>
             <span class="skill-tag">Docker</span>
-            <span class="skill-tag">CI/CD (Travis, CircleCI, Jenkins, Bitbucket Pipelines)</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Travis CI</span>
+            <span class="skill-tag">CircleCI</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">Bitbucket Pipelines</span>
           </div>
         </div>
         <div class="skill-category">
@@ -582,17 +593,35 @@
     // Mobile menu toggle
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
+    const navBackdrop = document.getElementById('nav-backdrop');
+
+    function closeMenu() {
+      navMenu.classList.remove('active');
+      navToggle.classList.remove('active');
+      navBackdrop.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function openMenu() {
+      navMenu.classList.add('active');
+      navToggle.classList.add('active');
+      navBackdrop.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
     navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      navToggle.classList.toggle('active');
+      if (navMenu.classList.contains('active')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
+
+    navBackdrop.addEventListener('click', closeMenu);
 
     // Close menu on link click
     document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        navToggle.classList.remove('active');
-      });
+      link.addEventListener('click', closeMenu);
     });
 
     // Smooth scrolling
