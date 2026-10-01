@@ -349,10 +349,6 @@ img {
   transform: translateY(-2px);
 }
 
-.btn-full {
-  width: 100%;
-}
-
 /* =============================================
    Sections
    ============================================= */
@@ -914,9 +910,8 @@ img {
    ============================================= */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 48px;
-  max-width: 900px;
+  grid-template-columns: 1fr;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -960,57 +955,6 @@ a.contact-method:hover {
 
 .contact-method svg {
   flex-shrink: 0;
-}
-
-.contact-form-wrapper {
-  background: var(--color-surface);
-  border-radius: var(--radius-lg);
-  padding: 36px;
-  border: 1px solid var(--color-border-light);
-  box-shadow: var(--shadow-sm);
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.form-group label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-text-secondary);
-}
-
-.form-group input,
-.form-group textarea {
-  padding: 12px 16px;
-  border: 1.5px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-  color: var(--color-text);
-  background: var(--color-bg);
-  transition: all var(--transition);
-  outline: none;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px var(--color-primary-light);
-  background: var(--color-surface);
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 120px;
 }
 
 /* =============================================
@@ -1295,15 +1239,6 @@ a.contact-method:hover {
   .community-card li {
     font-size: 0.88rem;
   }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-  }
-
-  .contact-form-wrapper {
-    padding: 24px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1395,10 +1330,6 @@ a.contact-method:hover {
     height: 40px;
   }
 
-  .contact-form-wrapper {
-    padding: 20px;
-  }
-
   .btn {
     padding: 11px 24px;
     font-size: 0.9rem;
@@ -1419,7 +1350,6 @@ a.contact-method:hover {
   .navbar,
   .hero-actions,
   .hero-socials,
-  .contact-form-wrapper,
   .footer-socials {
     display: none;
   }
