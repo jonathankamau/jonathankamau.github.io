@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Page not found | Jonathan Kamau</title>
+  <link rel="icon" href="/favicon.ico">
+  <script>
+    // Old document links (resume, degree certificate) were removed; send visitors to LinkedIn instead
+    var path = window.location.pathname.toLowerCase();
+    var linkedin = 'https://www.linkedin.com/in/kamaujonathan/';
+    if (/\/documents\/(resume\.pdf|degree-certificate\.jpe?g)$/.test(path)) {
+      window.location.replace(linkedin);
+    } else {
+      window.location.replace('/');
+    }
+  </script>
+</head>
+<body>
+  <p>Page not found. Redirecting&hellip; If nothing happens, go to the <a href="/">homepage</a> or <a href="https://www.linkedin.com/in/kamaujonathan/">LinkedIn</a>.</p>
+</body>
+</html>
